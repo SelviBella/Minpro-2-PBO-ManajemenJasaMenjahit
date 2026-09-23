@@ -142,10 +142,3 @@ public double hitungTotalBiaya(int jumlah) {
     return (this.hargaDasar + tambahanSulit) * jumlah;
 }
 ```
-
-* **Eksekusi Secara Polimorfik (`Pesanan.java`)**:
-Saat fungsi `.hitungTotalBiaya(jumlah)` dipanggil di dalam nota invoice, Java secara otomatis mendeteksi objek anak mana yang sedang aktif tanpa memerlukan fungsi percabangan manual (`if-else`).
-```java
-// Eksekusi polimorfik otomatis
-System.out.println("Total Bayar    : Rp " + layanan.hitungTotalBiaya(jumlah));
-```
