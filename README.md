@@ -116,7 +116,7 @@ public class Layanan {
     protected String jenisLayanan;
     protected double hargaDasar;
 
-    // Method polimorfik dasar yang akan di-override
+    // Fungsi kelas yang akan dioverride
     public double hitungTotalBiaya(int jumlah) {
         return this.hargaDasar * jumlah;
     }
