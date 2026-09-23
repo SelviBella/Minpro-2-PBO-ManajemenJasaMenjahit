@@ -14,11 +14,52 @@ Program aplikasi jasa menjahit ini dikembangkan untuk mengoptimalkan manajemen a
 
 ## Penjelasan Alur Program
 1. **Menu Utama**: Aplikasi memunculkan 5 pilihan instruksi menggunakan kombinasi perulangan `do-while` dan percabangan `switch-case`.
+
+   <img width="418" height="172" alt="image" src="https://github.com/user-attachments/assets/5d38c715-563f-4a5a-b0dd-5e06bfa344e6" />
+
+---
+
 2. **Menu 1 (Tambah/Create)**: Pengguna menginput data diri pelanggan, memilih jenis layanan (Jahit Baru atau Permak), memasukkan detail bahan/kesulitan, ukuran, serta kuantitas. Total harga otomatis dihitung secara instan berdasarkan jenis layanan yang dipilih.
-3. **Menu 2 (Tampilkan/Read)**: Menjelajahi data di memori untuk menampilkan seluruh daftar antrean pesanan aktif beserta nota rincian harganya.
+
+   <img width="785" height="703" alt="image" src="https://github.com/user-attachments/assets/1fadf1c8-4725-49e0-a966-e26f4cda2d8d" />
+
+---
+
+3. **Menu 2 (Tampilkan/Read)**: Menampilkan seluruh daftar antrean pesanan aktif beserta nota rincian harganya.
+
+   <img width="565" height="731" alt="image" src="https://github.com/user-attachments/assets/bca00ae1-4a46-472b-943f-e273897d2722" />
+
+---
+
 4. **Menu 3 (Ubah/Update)**: Pengguna dapat mencari ID pesanan tertentu untuk memperbarui rekam status pengerjaannya (misal: "Selesai" atau "Diambil").
-5. **Menu 4 (Hapus/Delete)**: Digunakan untuk membatalkan atau menghapus baris pesanan dari antrean permanen berdasarkan ID target.
-6. **Menu 5 (Keluar)**: Menghentikan perulangan menu utama dan menutup aplikasi secara aman.
+
+   <img width="548" height="680" alt="image" src="https://github.com/user-attachments/assets/7ae2155e-15c9-452f-a948-d171e7ce98c7" />
+
+---
+
+5. **Menu 4 (Hapus/Delete)**: Digunakan untuk membatalkan atau menghapus baris pesanan dari antrean permanen berdasarkan ID pesanan.
+
+   <img width="472" height="723" alt="image" src="https://github.com/user-attachments/assets/9b7e5c3d-f1e7-4a63-aae3-5466e5c1505e" />
+
+---
+
+6. **Menu 5 (Keluar)**: Menghentikan perulangan menu utama dan menutup program aplikasi.
+
+   <img width="375" height="168" alt="image" src="https://github.com/user-attachments/assets/4c33af16-32d2-432e-a9d1-c75d8dfc81f5" />
+
+---
+
+7. **Invalid**: Apabila pengguna salah menginput menu:
+
+   * Ketika pengguna menginput angka yang tidak ada di dalam menu.
+
+     <img width="392" height="162" alt="image" src="https://github.com/user-attachments/assets/629a401d-d40d-4bf8-ae03-3e6e5661cf7f" />
+
+     ---
+
+   * Ketika pengguna menginput huruf.
+     
+     <img width="378" height="172" alt="image" src="https://github.com/user-attachments/assets/94b2c58d-ee61-4f5d-ae40-d2fc4c348eb9" />
 
 ---
 
