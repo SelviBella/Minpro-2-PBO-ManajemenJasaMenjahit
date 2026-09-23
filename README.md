@@ -22,8 +22,8 @@ Program aplikasi jasa menjahit ini dikembangkan untuk mengoptimalkan manajemen a
 
 ## Penjelasan Penerapan Encapsulation & Inheritance
 * **Encapsulation:** Semua atribut penting di dalam kelas (seperti nama, nomor telepon, alamat, dan harga) dikunci menggunakan modifier private. Datanya tidak bisa diakses langsung dari luar, melainkan wajib melalui fungsi perantara *Getter dan Setter.
-* **Inheritance (Pewarisan)**: Terdapat pada class *Layanan* yang menjadi kelas induk (*Superclass). Class ini mewariskan properti umum kepada dua kelas anak (Subclass), yaitu *LayananJahitBaru* dan *LayananPermak* menggunakan kata kunci extends.
-* **Validasi Input**: * Program menggunakan fungsi input.hasNextInt() untuk memvalidasi ketikan pengguna. Jika pengguna tidak sengaja menginput huruf pada menu angka, program tidak akan *crash/error, melainkan menampilkan pesan peringatan dan mengulang menu.
+* **Inheritance (Pewarisan)**: Terdapat pada class *Layanan* yang menjadi kelas induk (Superclass). Class ini mewariskan properti umum kepada dua kelas anak (Subclass), yaitu *LayananJahitBaru* dan *LayananPermak* menggunakan kata kunci extends.
+* **Validasi Input**: Program menggunakan fungsi input.hasNextInt() untuk memvalidasi ketikan pengguna. Jika pengguna tidak sengaja menginput huruf pada menu angka, program tidak akan error, melainkan menampilkan pesan peringatan dan mengulang menu.
   
 ---
 
