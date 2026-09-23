@@ -13,7 +13,7 @@ Program aplikasi jasa menjahit ini dikembangkan untuk mengoptimalkan manajemen a
 ---
 
 ## Penjelasan Alur Program
-1. **Navigasi Menu Utama**: Aplikasi memunculkan 5 pilihan instruksi menggunakan kombinasi perulangan `do-while` dan percabangan `switch-case`.
+1. **Menu Utama**: Aplikasi memunculkan 5 pilihan instruksi menggunakan kombinasi perulangan `do-while` dan percabangan `switch-case`.
 2. **Menu 1 (Tambah/Create)**: Pengguna menginput data diri pelanggan, memilih jenis layanan (Jahit Baru atau Permak), memasukkan detail bahan/kesulitan, ukuran, serta kuantitas. Total harga otomatis dihitung secara instan berdasarkan jenis layanan yang dipilih.
 3. **Menu 2 (Tampilkan/Read)**: Menjelajahi data di memori untuk menampilkan seluruh daftar antrean pesanan aktif beserta nota rincian harganya.
 4. **Menu 3 (Ubah/Update)**: Pengguna dapat mencari ID pesanan tertentu untuk memperbarui rekam status pengerjaannya (misal: "Selesai" atau "Diambil").
