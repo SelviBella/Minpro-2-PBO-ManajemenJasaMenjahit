@@ -32,14 +32,13 @@ Program aplikasi jasa menjahit ini dikembangkan untuk mengoptimalkan manajemen a
 ## Penjelasan Letak Penerapan Nilai Tambah (MVC & Polymorphism)
 
 ### Struktur MVC
-Program wajib dibagi ke dalam struktur package yang terpisah demi kerapian kode:
-1. **`model`** (Tempat Struktur Data): Berisi file `Pelanggan.java`, `Layanan.java`, `LayananJahitBaru.java`, `LayananPermak.java`, and `Pesanan.java`.
-2. **`view`** (Tempat Antarmuka): Berisi file `PenjahitView.java` yang bertugas menangani interaksi cetak teks menu CLI dan membaca ketikan `Scanner` dari pengguna.
-3. **`controller`** (Tempat Logika Bisnis): Berisi file `PenjahitController.java` yang bertugas memanipulasi, menyimpan, mengubah, dan menghapus data utama di dalam `ArrayList<Pesanan>`.
-4. **`main`** (Gerbang Utama): Berisi file `MainApp.java` yang bertugas membuat objek View untuk menjalankan aplikasi pertama kali.
+Program dibagi ke dalam struktur package yang terpisah demi kerapian kode:
+1. **`model`**: Berisi file `Pelanggan.java`, `Layanan.java`, `LayananJahitBaru.java`, `LayananPermak.java`, and `Pesanan.java`.
+2. **`view`**: Berisi file `View.java` yang bertugas menampilkan output kepada pengguna dan membaca input dari pengguna melalui `Scanner`.
+3. **`controller`**: Berisi file `Controller.java` yang bertugas memanipulasi, menyimpan, mengubah, dan menghapus data utama di dalam `ArrayList<Pesanan>`.
 
 ### Polymorphism (Method Overriding)
-Polimorfisme diterapkan melalui teknik **Method Overriding** (menulis ulang fungsi kelas induk di kelas anak) untuk menghasilkan perhitungan biaya tambahan yang dinamis berdasarkan jenis kain atau tingkat kesulitan:
+Polimorfisme diterapkan melalui **Method Overriding** (menulis ulang fungsi kelas induk di kelas anak) untuk menghasilkan perhitungan biaya tambahan yang dinamis berdasarkan jenis kain atau tingkat kesulitan:
 
 * **Letak Fungsi pada Superclass (`Layanan.java`)**:
 ```java
