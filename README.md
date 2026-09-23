@@ -49,7 +49,7 @@ Program aplikasi jasa menjahit ini dikembangkan untuk mengoptimalkan manajemen a
 
 ---
 
-7. **Invalid**: Apabila pengguna salah menginput menu:
+7. **Validasi Input Menu**: Program menggunakan fungsi input.hasNextInt() untuk memvalidasi ketikan pengguna. Jika pengguna tidak sengaja menginput huruf pada menu angka, program tidak akan error, melainkan menampilkan pesan peringatan dan mengulang menu.
 
    * Ketika pengguna menginput angka yang tidak ada di dalam menu.
 
@@ -65,9 +65,38 @@ Program aplikasi jasa menjahit ini dikembangkan untuk mengoptimalkan manajemen a
 
 ## Penjelasan Penerapan Encapsulation & Inheritance
 * **Encapsulation:** Semua atribut penting di dalam kelas (seperti nama, nomor telepon, alamat, dan harga) dikunci menggunakan modifier private. Datanya tidak bisa diakses langsung dari luar, melainkan wajib melalui fungsi perantara Getter dan Setter.
+```java
+public class Pelanggan {
+    //Modifier Private
+    private String namaPelanggan;
+    private String nomorTelepon;
+    private String alamat;
+
+    // Getter & Setter
+    public String getNamaPelanggan() { 
+        return namaPelanggan; 
+    }
+    
+    public void setNamaPelanggan(String namaPelanggan) { 
+        this.namaPelanggan = namaPelanggan; 
+    }
+}
+```
+
 * **Inheritance (Pewarisan)**: Terdapat pada class *Layanan* yang menjadi kelas induk (Superclass). Class ini mewariskan properti umum kepada dua kelas anak (Subclass), yaitu *LayananJahitBaru* dan *LayananPermak* menggunakan kata kunci extends.
-* **Validasi Input**: Program menggunakan fungsi input.hasNextInt() untuk memvalidasi ketikan pengguna. Jika pengguna tidak sengaja menginput huruf pada menu angka, program tidak akan error, melainkan menampilkan pesan peringatan dan mengulang menu.
-  
+```java
+// Menggunakan kata kunci 'extends' untuk mewarisi sifat dari kelas Layanan
+public class LayananJahitBaru extends Layanan { 
+    private String jenisBahan; 
+
+    public LayananJahitBaru(double hargaDasar, String jenisBahan) {
+        // 'super' digunakan untuk mengirim data ke constructor milik Superclass
+        super("Jahit Pakaian Baru", hargaDasar); 
+        this.jenisBahan = jenisBahan;
+    }
+}
+```
+
 ---
 
 ## Penjelasan Letak Penerapan Nilai Tambah (MVC & Polymorphism)
